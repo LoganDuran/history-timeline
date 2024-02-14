@@ -6,7 +6,7 @@
 	"title": "History Timeline",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "A simple yet flexible history timeline block.",
 	"example": {},
 	"supports": {
 		"html": false
