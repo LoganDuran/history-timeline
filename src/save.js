@@ -15,10 +15,22 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function save() {
+const Save = (props) => {
+	const blockProps = useBlockProps.save();
+	const { timelineData } = props.attributes;
+  
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'History Timeline – hello from the saved content!' }
-		</p>
+	  <div {...blockProps}>
+		<div className="timeline">
+		  {timelineData.map((item, index) => (
+			<div className="content" key={index}>
+			  <span className="yearData">{item.year}</span>
+			  <span className="eventData">{item.event}</span>
+			</div>
+		  ))}
+		</div>
+	  </div>
 	);
-}
+  };
+  
+  export default Save;

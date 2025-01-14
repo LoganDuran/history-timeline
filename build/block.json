@@ -4,8 +4,27 @@
   "name": "create-block/history-timeline",
   "version": "0.1.0",
   "title": "History Timeline",
-  "category": "widgets",
   "icon": "smiley",
+  "category": "widgets",
+  "attributes": {
+    "timelineData": {
+      "type": "array",
+      "default": [
+        {
+          "year": "",
+          "event": ""
+        },
+        {
+          "year": "",
+          "event": ""
+        },
+        {
+          "year": "",
+          "event": ""
+        }
+      ]
+    }
+  },
   "description": "A simple yet flexible history timeline block.",
   "example": {},
   "supports": {
