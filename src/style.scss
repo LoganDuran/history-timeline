@@ -80,3 +80,61 @@
 	background-color: black;
   }
 }
+
+
+/* ---- Responsivenes ---- */
+
+@media (max-width: 880px) {
+	/* Timeline Responsivenes */
+	.timeline {
+	  max-width: 360px;
+	  padding: 0;
+	}
+  
+	.timeline::before {
+	  left: 8px;
+	}
+  
+	.timeline ul {
+	  display: flex;
+	  flex-direction: column;
+	}
+  
+	.point.point-left,
+	.point.point-right,
+	.point.point-centar {
+	  display: flex;
+  
+	  left: 0;
+	}
+  
+	.timeline ul li,
+	.timeline ul li:first-child {
+	  display: flex;
+	  flex-direction: row-reverse;
+	  justify-content: flex-end;
+	}
+	.timeline ul li:first-child {
+	  display: flex;
+	  flex-direction: row-reverse;
+	  justify-content: flex-end;
+	  margin-bottom: 10px;
+	}
+  
+	.timeline ul li .content {
+	  width: 95%;
+	  padding: 0 20px 0 11px;
+	  margin: 0;
+	}
+  }
+  
+  @media (max-width: 410px) {
+  
+	/* ---- Timeline ----- */
+  
+	.timeline {
+	  width: 100%;
+	}
+  
+	
+  }
