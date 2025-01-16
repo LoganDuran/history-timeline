@@ -45,8 +45,10 @@ const Edit = (props) => {
 	return (
 	  <div {...blockProps}>
 		<div className="timeline">
+
 		  {timelineData.map((item, index) => (
 			<div className="content" key={index}>
+			<div className='textbubble' >
 			  <TextControl
 				placeholder="year"
 				value={item.year}
@@ -58,7 +60,13 @@ const Edit = (props) => {
 				onChange={(value) => updateTimelineData(index, "event", value)}
 			  />
 			</div>
+			<div className="point"></div>
+
+			</div>
+
+			
 		  ))}
+
 		</div>
 	  </div>
 	);
