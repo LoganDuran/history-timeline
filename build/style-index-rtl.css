@@ -2,25 +2,20 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
 .wp-block-create-block-history-timeline {
-  background-color: #21759b;
   color: #fff;
-  padding: 2px;
+  /* ---- Responsivenes ---- */
 }
 .wp-block-create-block-history-timeline .timeline {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 .wp-block-create-block-history-timeline .content {
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 50%;
 }
 .wp-block-create-block-history-timeline .textbubble {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35.1%;
   gap: 10px;
   padding: 20px;
   margin: 20px;
@@ -28,71 +23,45 @@
   border-radius: 1rem;
 }
 .wp-block-create-block-history-timeline .point {
+  position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #21759b;
-  border-radius: 100%;
+  border-radius: 50%;
+  left: -10px;
+  top: 40%;
+  border-radius: 50%;
   z-index: 2;
   border: 2px black solid;
-  position: relative;
 }
-.wp-block-create-block-history-timeline .point.point-right {
-  left: 9px;
+.wp-block-create-block-history-timeline .timeline .content:nth-child(even) {
+  right: 50%;
 }
-.wp-block-create-block-history-timeline .point.point-left {
-  right: 11px;
-}
-.wp-block-create-block-history-timeline .timeline .content:nth-child(odd) {
-  flex-direction: row-reverse;
+.wp-block-create-block-history-timeline .content:nth-child(even) .point {
+  right: -14px;
 }
 .wp-block-create-block-history-timeline .timeline::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 2px;
-  right: 49.7%;
+  right: 49.8%;
   background-color: black;
 }
-
-/* ---- Responsivenes ---- */
 @media (max-width: 880px) {
-  .timeline {
-    max-width: 360px;
-    padding: 0;
+  .wp-block-create-block-history-timeline .timeline::before {
+    right: 12px;
   }
-  .timeline::before {
-    right: 8px;
+  .wp-block-create-block-history-timeline .content {
+    width: 100%;
+    padding-right: 10px;
   }
-  .timeline ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .point.point-left,
-  .point.point-right,
-  .point.point-centar {
-    display: flex;
+  .wp-block-create-block-history-timeline .point {
     right: 0;
   }
-  .timeline ul li,
-  .timeline ul li:first-child {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+  .wp-block-create-block-history-timeline .timeline .content:nth-child(even) {
+    right: 0;
   }
-  .timeline ul li:first-child {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-  }
-  .timeline ul li .content {
-    width: 95%;
-    padding: 0 11px 0 20px;
-    margin: 0;
-  }
-}
-@media (max-width: 410px) {
-  .timeline {
-    width: 100%;
+  .wp-block-create-block-history-timeline .content:nth-child(even) .point {
+    right: 0;
   }
 }

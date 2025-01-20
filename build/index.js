@@ -222,7 +222,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/history-timeline","version":"0.1.0","title":"History Timeline","icon":"smiley","category":"widgets","attributes":{"timelineData":{"type":"array","default":[{"year":"","event":""},{"year":"","event":""},{"year":"","event":""}]}},"description":"A simple yet flexible history timeline block.","example":{},"supports":{"html":false},"textdomain":"history-timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/history-timeline","version":"0.1.0","title":"History Timeline","icon":"smiley","category":"widgets","attributes":{"timelineData":{"type":"array","default":[{"year":"","event":""},{"year":"","event":""},{"year":"","event":""}]}},"description":"A simple yet flexible history timeline block.","example":{},"supports":{"html":false,"color":{"background":true,"text":true},"align":["wide","full"],"spacing":{"padding":true,"margin":true}},"textdomain":"history-timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
