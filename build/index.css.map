@@ -1,1 +1,0 @@
-{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://history-timeline/./src/editor.scss"],"sourcesContent":[".wp-block-create-block-history-timeline {\r\n\tborder: 1px dotted #f00;\r\n}\r\n"],"names":[],"sourceRoot":""}

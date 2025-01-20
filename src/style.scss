@@ -1,12 +1,11 @@
 .wp-block-create-block-history-timeline {
-	// background-color: #21759b;
-	color: #fff;
+	// color: #fff;s
 
 	.timeline {
 		position: relative;
 	}
 
-	.content {
+	.container {
 		position: relative;
 		width: 50%;
 	}
@@ -15,9 +14,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		gap: 10px;
-		padding: 20px;
+		text-align: center;
+		gap: 5px;
+		padding: 10px;
 		margin: 20px;
 		border: 2px solid black;
 		border-radius: 1rem;
@@ -30,17 +29,17 @@
 		border-radius: 50%;
 		right: -10px;
 		top: 40%;
-		// background-color: #21759b;
+		background-color: white;
 		border-radius: 50%;
 		z-index: 2;
 		border: 2px black solid;
 	}
 
-	.timeline .content:nth-child(even) {
+	.timeline .container:nth-child(even) {
 		left: 50%;
 	}
 
-	.content:nth-child(even) .point {
+	.container:nth-child(even) .point {
 		left: -14px;
 	}
 
@@ -60,7 +59,7 @@
 		.timeline::before {
 			left: 12px;
 		}
-		.content {
+		.container {
 			width: 100%;
 			padding-left: 10px;
 		}
@@ -68,11 +67,11 @@
 			left: 0;
 		}
 
-		.timeline .content:nth-child(even) {
+		.timeline .container:nth-child(even) {
 			left: 0;
 		}
 
-		.content:nth-child(even) .point {
+		.container:nth-child(even) .point {
 			left: 0;
 		}
 	}

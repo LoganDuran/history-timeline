@@ -18,7 +18,7 @@ const Edit = (props) => {
 		<div {...blockProps}>
 			<div className="timeline">
 				{timelineData.map((item, index) => (
-					<div className="content" key={index}>
+					<div className="container" key={index}>
 						<div className="textbubble">
 							<TextControl
 								placeholder="year"
