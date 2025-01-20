@@ -8,7 +8,7 @@ License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
 Example block scaffolded with Create Block tool.
 
-![image](/image.png)
+![image](https://raw.githubusercontent.com/LoganDuran/history-timeline/refs/heads/main/image.png)
 
 
 == Description ==
