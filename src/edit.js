@@ -1,6 +1,6 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
-import { TextControl } from "@wordpress/components";
+import { TextControl, TextareaControl } from "@wordpress/components";
 import "./editor.scss";
 
 const Edit = (props) => {
@@ -25,7 +25,7 @@ const Edit = (props) => {
 								value={item.year}
 								onChange={(value) => updateTimelineData(index, "year", value)}
 							/>
-							<TextControl
+							<TextareaControl
 								placeholder="event"
 								value={item.event}
 								onChange={(value) => updateTimelineData(index, "event", value)}
